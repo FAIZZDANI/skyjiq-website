@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to SKYJIQ!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <pre id="output">
+        <script>
+            function displayText() {
+                const output = `
+                    [][]   []      [] []          [] [][][][] [][][][][]  [][][][]   
+                  []    [] []    []     []      []         []     []     []       []   
+                  []       []  []         []  []           []     []     []       []   
+                    [][]   [][]             []             []     []     []   []  []    
+                        [] []  []           []             []     []     []     [][]     
+                  []    [] []    []         []       []    []     []      [][][][][]            
+                    [][]   []      []       []        [][][]  [][][][][]            []
+                `;
+                document.getElementById('output').innerText = output;
+            }
+            function checkCredentials() {
+                const username = document.getElementById('username').value;
+                const pass = document.getElementById('password').value;
+
+                if (username === "faizzDANNY" && pass === "1210710") 
+                {
+                    alert("HI FAIZZ DANIEL, WELCOME BACK!!!");
+                } 
+                else if (username === "nrlANNA" && pass === "1012712") 
+                {
+                    alert("HI NURUL JANNAH, WELCOME BACK!!!");
+                }
+                else if (username === "FarisyaDania" && pass === "1010629" )
+                {
+                    alert("HI FARISYA DANIA, WELCOME BACK!!!");
+                }
+                else if (username === "Faizozaki" && pass === "RIZZ1010")
+                {
+                    alert("HI FAIZOZAKI, WELCOME BACK!!!");
+                }
+                else 
+                {
+                    alert("INVALID/WRONG USERNAME OR PASSWORD");
+                }
+            }
+        </script>
+    </pre>
+
+    <form>
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <button type="button" onclick="checkCredentials()">Submit</button>
+    </form>
+
+    <script>
+        displayText();
+    </script>
+</body>
+
+</html>
